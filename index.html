@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Encuensta</title>
+</head>
+
+<body>
+
+
+
+    <!-- container start -->
+    <div class="container principal">
+        <h1 id="title" class="text-center">Encuesta</h1>
+        <p id="description" class="text-center">Bienvenid@s, aspirantes al curso de programación</p>
+
+        <!-- form start -->
+        <form id="survey-form">
+            <!-- nombre -->
+            <div class="mb-3">
+                <label id="name-label" for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="ingresar nombre">
+            </div>
+            <!-- email -->
+            <div class="mb-3">
+                <label id="email-label" for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="ingresar email válido">
+            </div>
+            <!-- edad -->
+            <div class="mb-3">
+                <label id="number-label" for="number" class="form-label">Edad</label>
+                <input type="number" placeholder="debés tener 18 al menos" min="18" max="99" class="form-control" id="number">
+            </div>
+            <!-- select menu -->
+            <div class="mb-3">
+                <p>Que sistema operativo usas?</p>
+                <select class="form-select" aria-label="seleccion de sistema operativo" name="SO" id="dropdown">Elija SO
+                    <option value="windows">Windows</option>
+                    <option value="linux">Linux</option>
+                    <option value="mac">Mac</option>
+                </select>
+            </div>
+
+            <!-- radio-ingles-->
+            <div class="mb-3">
+                <p>Cual es tu nivel de inglés?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio-ingles" id="avanzado">
+                    <label for="avanzado">
+                        Avanzado: puedo conversar, leer y escribir con fluidez.
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio-ingles" id="medio">
+                    <label for="medio">
+                        Medio: puedo presentarme, hablar de mis hobbies/trabajos, pedir/brindar información básica.
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio-ingles" id="basico">
+                    <label for="basico">
+                        Básico: conosco algunas palabras y expresiones elementales (ejemplo: saber nombres de los
+                        colores o como saludar en inglés)
+                    </label>
+                </div>
+            </div>
+            <!-- END radio-ingles-->
+
+
+            <!-- CHECKBOX -->
+            <div class="mb-3">
+                <p>Qué temas te gustaria abordar?</p>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="ciencia">
+                    <label for="ciencia">Ciencia de datos</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="apis">
+                    <label for="apis">Uso de APIs</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="" id="web">
+                    <label for="web">Desarrollo web</label>
+                </div>
+
+            </div>
+            <!-- END checkbox -->
+
+            <!-- texto libre -->
+            <div class="mb-3">
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Comentarios? Sugerencias? Te
+                        leemos!</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+            <!-- FIN texto libre -->
+
+
+            <!-- SUBMIT BUTTON -->
+            <button type="submit" class="btn btn-success">Enviar</button>
+
+        </form>
+        <!-- FORM END -->
+
+    </div>
+    <!-- end of container -->
+
+    <!--JS Bundle for Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
